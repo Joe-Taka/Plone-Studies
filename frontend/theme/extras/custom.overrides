@@ -1,0 +1,118 @@
+.ui.basic.segment.header-wrapper {
+  background: #007eb6;
+  color: @white;
+  padding: 0 0 1em 0;
+  .top-header {
+    background-color: #1f1238;
+    width: 100%;
+    margin-bottom: 1em;
+    .ui.container {
+      display: flex;
+      justify-content: flex-end;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 11px;
+      a {
+        color: @white;
+        margin-right: 10px;
+      }
+    }
+  }
+  .nav-wrapper {
+    display: flex;
+    align-items: baseline;
+    text-transform: uppercase;
+
+    .ui.secondary.pointing.menu .item,
+    .ui.pointing.dropdown {
+      color: @white;
+      border: none;
+      padding: 0.5em 0.8em;
+      border-radius: 5px;
+      margin-right: 5px;
+      font-size: 14px;
+      &:first-child {
+        display: none;
+      }
+
+      &.active,
+      &:hover {
+        background-color: #1a0b31;
+      }
+    }
+
+    .ui.button.search {
+      background: transparent;
+      padding: 0.5em 0.8em;
+      border-radius: 5px;
+      color: @white;
+      font-weight: normal;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: #1a0b31;
+      }
+      .icon {
+        margin-bottom: -2px;
+      }
+    }
+  }
+}
+
+.ui.basic.segment.content-area {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+// Profile component
+
+.block.Profile {
+  background: #e8eef2;
+  .ui.container {
+    padding: 40px 70px;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 21px;
+  }
+
+  .other-link {
+    color: #175758;
+    font-weight: bold;
+  }
+}
+
+.block.Forms {
+  background-color: Beige;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 6vh 20vw;
+
+  .field {
+    input {
+      width: 100%;
+      padding: 5px;
+    }
+    textarea {
+      width: 100%;
+      padding: 5px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2vh;
+    align-items: start;
+  }
+}
+
+.block.Users {
+  background-color: MintCream;
+  padding: 3vw;
+  border-radius: 20px;
+}
